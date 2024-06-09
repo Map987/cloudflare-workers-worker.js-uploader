@@ -1,3 +1,13 @@
+
+https://dash.cloudflare.com/f9dda5fd18bd0122b4c46f878e11b001/workers/services/view/dawn-sky-f8a8/production
+
+# 对于在https://dash.cloudflare.com  中，左侧菜单栏，打开worker之后，长按 或右键一个worker，链接长这样
+# f9dda5fd18bd0122b4c46f878e11b001 填写到 
+# dawn-sky-f8a8 填写到
+token 在 https://dash.cloudflare.com/profile/api-tokens 申请
+![Image text](https://raw.githubusercontent.com/Map987/cloudflare-workers-worker.js-uploader/main/Screenshot_20240609_214722.jpg)
+选择 编辑workers类型
+_________________________________________________________________________
 ## 其中f9dda5fd18bd0122b4c46f878e11b001 是用户id，而这个id，其实只要在
 ## https://dash.cloudflare.com
 ## 页，网页链接中就一直跟着 dash.cloudflare.com/f9dda5fd18bd0122b4c46f878e11b001 
