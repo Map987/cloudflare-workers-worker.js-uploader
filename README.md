@@ -18,4 +18,5 @@ dash.cloudflare.com 左侧栏点击workers，就可以看到
 ![Image text](https://raw.githubusercontent.com/Map987/cloudflare-workers-worker.js-uploader/main/Screenshot_20240609_223300.jpg)
 ## 主页dash.cloudflare.com  右上角头像，点击个人简介，第一个，带邮箱那个按钮，然后也是这个api token申请页面
 选择申请workers的
+![Image text](https://raw.githubusercontent.com/Map987/cloudflare-workers-worker.js-uploader/main/Screenshot_20240609_214722.jpg) 即可
 
