@@ -5,11 +5,17 @@
 
 # worker的名字 dawn-sky-f8a8
 在workers主页面内，访问 
-![Image text](https://raw.githubusercontent.com/Map987/cloudflare-workers-worker.js-uploader/main/Screenshot_20240609_223255.jpg)
+![Image text](https://raw.githubusercontent.com/Map987/cloudflare-workers-worker.js-uploader/main/Screenshot_20240609_223255.jpg))
 dash.cloudflare.com 左侧栏点击workers，就可以看到
+![Image text](https://raw.githubusercontent.com/Map987/cloudflare-workers-worker.js-uploader/main/Screenshot_20240609_223832.jpg)
 同时创建worker时候，也看得到
 
-# api token 同样在worker主页面，下滑，这里有一个设置api token的按钮
+# api token 同样在worker主页面，下滑，
+![Image text](https://raw.githubusercontent.com/Map987/cloudflare-workers-worker.js-uploader/main/Screenshot_20240609_223818.jpg)
+# 这里有一个管理API令牌的按钮
 同时可以看到，用户id就写明了是之前提到的，dash.cloudflare.com主页面后跟着的那一串
-## 也可以直接在dash.cloudflare.com  右上角头像，点击个人首页，然后也是这个api token申请页面
+## 也可以直接在
+![Image text](https://raw.githubusercontent.com/Map987/cloudflare-workers-worker.js-uploader/main/Screenshot_20240609_223300.jpg)
+## 主页dash.cloudflare.com  右上角头像，点击个人简介，第一个，带邮箱那个按钮，然后也是这个api token申请页面
 选择申请workers的
+
