@@ -6,7 +6,7 @@ https://dash.cloudflare.com/f9dda5fd18bd0122b4c46f878e11b001/workers/services/vi
 ![Image text](https://github.com/Map987/cloudflare-workers-worker.js-uploader/raw/main/IMG_20240609_232451.jpg)
 ![Image text](https://github.com/Map987/cloudflare-workers-worker.js-uploader/raw/main/IMG_20240609_232517.jpg)
 
-# https://dash.cloudflare.com  
+# https://dash.cloudflare.com/?to=/:account/workers-and-pages/  
 # 中，左侧菜单栏，打开worker之后，长按 或右键一个worker，链接长这样
 https://dash.cloudflare.com/f9dda5fd18bd0122b4c46f878e11b001/workers/services/view/dawn-sky-f8a8/production
 
@@ -25,14 +25,14 @@ cf_token = ''
 
 _________________________________________________________________________
 ## 1. 其中f9dda5fd18bd0122b4c46f878e11b001 是用户id，而这个id，其实只要在
-## https://dash.cloudflare.com
+## https://dash.cloudflare.com/?to=/:account/workers-and-pages/
 ## 页，网页链接中就一直跟着 dash.cloudflare.com/f9dda5fd18bd0122b4c46f878e11b001 
 这个就是所有网页的前缀，所以直接访问 dash.cloudflare.com ，然后复制后半这串数字字母就可以了
 
 # 2. worker的名字 dawn-sky-f8a8
 在workers主页面内，访问 
 ![Image text](https://raw.githubusercontent.com/Map987/cloudflare-workers-worker.js-uploader/main/Screenshot_20240609_223255.jpg)
-dash.cloudflare.com 左侧栏点击workers，就可以看到
+https://dash.cloudflare.com/?to=/:account/workers-and-pages/ 左侧栏点击workers，就可以看到
 ![Image text](https://raw.githubusercontent.com/Map987/cloudflare-workers-worker.js-uploader/main/Screenshot_20240609_223832.jpg)
 同时创建worker时候，也看得到
 
