@@ -14,10 +14,14 @@ with open("/storage/emulated/0/Download/worker.js", "r") as file:
 delimiter = "----WebKitFormBoundary" + hex(int(time.time() * 1000))
 
 # 
-body = f"--{delimiter}\r\nContent-Disposition: form-data; name=\"worker\"; filename=\"test.js\"\r\n\r\n{data}\r\n"
-body += f"--{delimiter}\r\nContent-Disposition: form-data; name=\"metadata\"\r\n\r\n{{\"body_part\":\"worker\"}}\r\n"
+body = f"--{delimiter}\r\n"
+body += "Content-Disposition: form-data; name=\"worker\"; filename=\"test.js\"\r\n"
+body += "Content-Type: application/javascript+module\r\n\r\n"  # 确保这一行在 Content-Disposition 之后
+body += f"{data}\r\n"
+body += f"--{delimiter}\r\n"
+body += "Content-Disposition: form-data; name=\"metadata\"\r\n\r\n"
+body += "{\"body_part\":\"worker\"}\r\n"
 body += f"--{delimiter}--\r\n"
-
 headers = {
     "Authorization": f"Bearer {cf_token}",
     "Content-Type": f"multipart/form-data; boundary={delimiter}"
