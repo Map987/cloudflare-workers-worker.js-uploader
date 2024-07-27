@@ -1,4 +1,10 @@
-
+## 主要api 
+response = requests.put(
+    f"https://api.cloudflare.com/client/v4/accounts/{account_id}/workers/services/{workers_id}/environments/production/content",
+    headers=headers,
+    data=body.encode()
+)
+    
 https://dash.cloudflare.com/f9dda5fd18bd0122b4c46f878e11b001/workers/services/view/dawn-sky-f8a8/production
 
 # 对于在
