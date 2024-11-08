@@ -1,3 +1,44 @@
+
+``` 
+addEventListener('fetch', event => {
+  event.respondWith(handleFetch(event.request));
+});
+
+async function handleFetch(request) {
+  const url = new URL(request.url);
+  if (url.pathname === '/ok') {
+    // 对于路径 /ok，返回 https://api.gamer.com.tw/anime/v1/anime_list.php 的内容
+    const response = await fetch('https://api.gamer.com.tw/anime/v1/anime_list.php');
+    const formattedResponse = await formatResponse(response);
+    return new Response(JSON.stringify(formattedResponse), {
+      headers: { 'Content-Type': 'application/json' }
+    });
+  } else {
+    // 对于其他路径，继续正常的fetch请求
+ //   return fetch(request);
+    return new Response('访问https://域名….com/ok目录', {
+      headers: { 'Content-Type': 'text/plain' }
+      });
+      // https://bahamut..workers.dev/显示 ： 璁块棶https://鍩熷悕鈥�.com/ok鐩綍
+      
+      
+//    return new Response(JSON.stringify({
+//      message: "This is the response for /ok path"
+//    }), {
+//      headers: { 'content-type': 'application/json' }
+
+  }
+}
+
+async function formatResponse(response) {
+  const text = await response.text(); // 获取原始文本响应
+  const decodedText = decodeURIComponent(text); // 对整个文本进行解码
+  const data = JSON.parse(decodedText); // 解析解码后的文本为JSON
+  // 现在data是一个对象或数组，您可以根据需要进行进一步的处理
+  return data;
+}
+
+```
 ## 主要api 
 response = requests.put(
     f"https://api.cloudflare.com/client/v4/accounts/{account_id}/workers/services/{workers_id}/environments/production/content",
